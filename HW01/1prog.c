@@ -1,6 +1,6 @@
 /*
  * 1prog.c
- * 
+ * del 2prog.c
  * Copyright 2024 ran <ran@SATURN>
  * 
  * This program is free software; you can redistribute it and/or modify
@@ -17,7 +17,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
- * TEST
+ * TEST 2
  * 
  */
 
