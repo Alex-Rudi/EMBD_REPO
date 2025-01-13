@@ -1,13 +1,10 @@
-all: main
+all: report
 
-main: main.o temp_api.o
-	gcc -o main main.o temp_api.o
-
-main.o: main.c
-	gcc -c -o main.o main.c
-
-temp_api.o: temp_api.c
-	gcc -c -o temp_api.o temp_api.c
-
+report: report.o temp.o
+	gcc -o report report.o temp.o 
+report.o: report.c
+	gcc -c -o report.o report.c
+temp.o: temp.c
+	gcc  -c -o temp.o temp.c
 clean:
-	rm -rf *.o main
+	rm -rf *.o report

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
-#include "temp_api.h"
+#include "temp.h"
 
 int main(int argc, char* const *argv)
 {

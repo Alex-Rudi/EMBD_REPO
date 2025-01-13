@@ -1,4 +1,4 @@
-#include "temp_api.h"
+#include "temp.h"
 
 void calculate_a_month_average(int, record_t*, char*)
 {
