@@ -39,10 +39,10 @@ int get_month(char *);
 int get_statistic(struct sensors* data, int , int* , int* , int*, int*); //
 int max(int, int);
 int min(int, int);
-void calculate_month_statistic(size_t*, struct sensors*, int*, int*, int*, int, int); // статистика за месяц
-void calculate_year_statistic(size_t*, struct sensors*, int*, int*, int*, int, int);  // статистика за год
+void calculate_month_statistic(size_t*, struct sensors*, int*, int*, int*, int, int); 
+void calculate_year_statistic(size_t*, struct sensors*, int*, int*, int*, int, int);  
 
-int print_debug_info(struct sensors *, int); // debug info
+int print_debug_info(struct sensors *, int); 
 void add_records_sensors(struct sensors *date, int, uint16_t, uint8_t, uint8_t, int8_t, int8_t, int8_t); 
 int add_info_sensors(struct sensors *);      
 void mergeSort_t(struct sensors*, int, int); 

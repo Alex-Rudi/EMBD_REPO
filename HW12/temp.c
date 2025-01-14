@@ -66,7 +66,7 @@ int print_statistic_t(struct sensors* data, int month, int* average, int* min_t,
         printf("   # Year Month NuValue ErValue MonthAvg MonthMax MonthMin\n");
     if(month)
     {
-        printf("%4d %4d %5d %7d %7d %8d %8d %8d\n", 1, 2023, month, 4, 5, average[month], min_t[month], max_t[month]);
+        printf("%4d %4d %5d %7d %7d %8d %8d %8d\n", 1, 2021, month, 4, 5, average[month], min_t[month], max_t[month]);
         
     }
     else

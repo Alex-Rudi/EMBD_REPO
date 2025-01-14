@@ -1,12 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
-
-// //#define DEBUG
-// #if defined DEBUG
-// #define DEBBUGPRINT fprintf(stderr, "debug in %d line func: %s\n, line func: %s\n", __LINE__, __FUNC__);
-// #else
-// #define DEBBUGPRINT
-
 #define SIZE 30
 #define OPTIONS_USAGE "Usage: report [OPTION]... [FILE_PATH]\n"
 #define OPTIONS_DESCRIPTION "Description: a console application for reading temperature values from a CSV file.\n"
