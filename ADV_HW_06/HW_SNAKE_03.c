@@ -461,17 +461,17 @@ int32_t update(snake_t *head, food_t *food) {
 void startMenu() {
 
     int max_x = 0, max_y = 0;
-    int width = 35, height = 4;
+    int width = 50, height = 5;
     char c = 0;
     getmaxyx(stdscr, max_y, max_x);
-    WINDOW *menu = newwin(height, width, max_y/2 - height/2, max_x/2 - width/2); 
+    WINDOW *menu = newwin(height, width, max_y/2 - height/2, max_x/2 - width/2);
     box(menu,0,0);
     setColor(3);
     refresh();
     wrefresh(menu);
-    mvprintw(max_y/2 - 1, max_x/2 - width/2 + 5, "Press '1' SINGLE PLAYER");
-    mvprintw(max_y/2, max_x/2 - width/2 + 5, "Press '2' TWO PLAYERS");
-   
+    mvprintw(max_y/2 - 1, max_x/2 - width/2 + 5, "Press '1' for SINGLE PLAYER");
+    mvprintw(max_y/2, max_x/2 - width/2 + 5, "Press '2' for TWO PLAYERS");
+    mvprintw(max_y/2 + 1, max_x/2 - width/2 + 5, "Press 'F10' for EXIT");
 
     wrefresh(menu);
     do {
@@ -527,7 +527,7 @@ void init_screen() {
 
     curs_set(FALSE);    //Отключаем курсор
     timeout(0);    //Отключаем таймаут после нажатия клавиши в цикле
-    mvprintw(0, 2, "Controls keys: ARROWS for PLAYER_1; WSAD for PLAYER_2. Press 'F10' for EXIT", VIC_COUNT);
+    mvprintw(0, 2, "Keyboard control keys: PLAYER_1 - ARROWS; PLAYER_2 - WSAD. Press 'F10' for EXIT", VIC_COUNT);
 
 }
 
